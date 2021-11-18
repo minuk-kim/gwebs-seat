@@ -1,0 +1,51 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: 60px 60px auto 60px;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #fff;
+}
+
+.main__header,
+.main__content {
+  width: 90%;
+  margin: 20px auto;
+}
+
+/*
+@media (min-width: 1024px) {
+  pc css - 특별히 지정하지 않음
+}
+*/
+
+/*
+@media (max-width: 767px) {
+  Mobile css - 특별히 지정하지 않음
+}
+*/

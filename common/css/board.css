@@ -1,0 +1,125 @@
+.content__table-container {
+  display: grid;
+  grid-template-rows: 30px;
+  grid-auto-rows: 30px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.table__body {
+  display: grid;
+  grid-template-rows: 30px;
+  grid-auto-rows: 30px;
+}
+
+.table-header__style {
+  font-weight: bold;
+  background-color: #f0f6f9;
+  border-top: 1px solid var(--gray-line-color);
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  position: relative;
+  border-left: 1px solid var(--gray-line-color);
+}
+
+.mody-template {
+  position: absolute;
+  z-index: 10;
+  height: 30px;
+  margin-left: -1px;
+}
+
+.admin-table {
+  grid-template-columns: 90px 2fr 3fr 2fr 2fr 2fr 4fr 4fr 4fr 4fr 2fr;
+}
+
+.member-table {
+  grid-template-columns: 90px 4fr 4fr 4fr 2fr 2fr 3fr 2fr 2fr 7fr;
+}
+
+.seat-table {
+  grid-template-columns: 90px 2fr 2fr 2fr 3fr 4fr 2fr 7fr 7fr 5fr;
+}
+
+.table-row__blue,
+.table-cell__blue {
+  color: #0d47a1;
+  background-color: #e3f2fd;
+}
+
+.table-cell__blue:hover,
+.table-cell__blue:focus-within {
+  background-color: #bbdefb;
+}
+
+.table-row__green,
+.table-cell__green {
+  color: #33691e;
+  background-color: #f1f8e9;
+}
+
+.table-cell__green:hover,
+.table-cell__green:focus-within {
+  background-color: #dcedc8;
+}
+
+.table-row__gray:hover {
+  background-color: #fafafa;
+}
+
+.table-cell__gray:hover {
+  background-color: #eceff1;
+}
+
+.table-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--gray-line-color);
+  border-right: 1px solid var(--gray-line-color);
+}
+
+.table-cell .material-icons {
+  font-size: 16px;
+}
+
+.table-cell .basic-btn {
+  border-radius: 5px;
+}
+
+.table-ddl,
+.table-input {
+  padding: 2px 8px;
+  width: 100%;
+  border-bottom: 1px solid var(--gray-line-color);
+  border-right: 1px solid var(--gray-line-color);
+  border-top: none;
+  border-left: none;
+  font-size: 12px;
+}
+
+/*
+.table-input:focus-within {
+  border: 2px solid #41b40a;
+}
+*/
+
+.table-ddl-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-ddl-icon {
+  display: flex;
+  width: 30px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid var(--gray-line-color);
+}

@@ -1,0 +1,170 @@
+.seat-frame {
+  display: grid;
+  grid-template-columns: repeat(44, 39px);
+  grid-template-rows: repeat(9, 39px);
+  overflow: auto;
+  border: 1px solid #41b40a;
+}
+
+/* 15-7 회의실 */
+.frame__item:nth-child(1) {
+  border: 1px solid var(--seat-frame-color);
+  grid-row-start: 1;
+  grid-row-end: span 3;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  background-color: #fff;
+  z-index: 5;
+}
+/* VIP 회의실 */
+.frame__item:nth-child(2) {
+  border: 1px solid var(--seat-frame-color);
+  border-right: 1px solid var(--seat-frame-color);
+  grid-row-start: 7;
+  grid-row-end: span 3;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  z-index: 5;
+}
+/* 15-6 회의실 */
+.frame__item:nth-child(3) {
+  border: 1px solid var(--seat-frame-color);
+  border-left: 1px solid var(--seat-frame-color);
+  grid-row-start: 7;
+  grid-row-end: span 3;
+  grid-column-start: 4;
+  grid-column-end: span 2;
+  z-index: 5;
+}
+
+/* AI 부스 */
+.frame__item:nth-child(4) {
+  border: 1px solid var(--seat-frame-color);
+  grid-row-start: 4;
+  grid-row-end: span 2;
+  grid-column-start: 41;
+  grid-column-end: span 4;
+  z-index: 5;
+}
+
+/* 경영지원팀 프레임 */
+.frame__item:nth-child(5) {
+  border: 1px solid var(--seat-frame-color);
+  grid-row-start: 2;
+  grid-row-end: span 4;
+  grid-column-start: 2;
+  grid-column-end: span 3;
+}
+
+/* 경영지원팀 1col */
+.frame__item:nth-child(6) {
+  grid-row-start: 2;
+  grid-row-end: span 4;
+  grid-column-start: 2;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid var(--seat-frame-color);
+}
+
+/* 경영지원팀 2col */
+.frame__item:nth-child(7) {
+  grid-row-start: 2;
+  grid-row-end: span 4;
+  grid-column-start: 3;
+  border-left: 1px solid var(--seat-frame-color);
+  border-right: 1px dashed var(--seat-frame-color);
+}
+
+/* 경영지원팀 3col */
+.frame__item:nth-child(8) {
+  grid-row-start: 2;
+  grid-row-end: span 4;
+  grid-column-start: 4;
+  border-left: 1px dashed var(--seat-frame-color);
+}
+
+/* 경영지원팀 4col */
+.frame__item:nth-child(9) {
+  grid-row-start: 2;
+  grid-row-end: span 4;
+  grid-column-start: 5;
+  border-left: 1px solid var(--seat-frame-color);
+}
+
+/* 경영지원팀 1row */
+.frame__item:nth-child(10) {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: span 4;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid var(--seat-frame-color);
+}
+
+/* 경영지원팀 2row */
+.frame__item:nth-child(11) {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-column-end: span 4;
+  border-top: 1px solid var(--seat-frame-color);
+  border-bottom: 1px solid #fff;
+}
+
+/* 경영지원팀 3row */
+.frame__item:nth-child(12) {
+  grid-row-start: 4;
+  grid-column-start: 2;
+  grid-column-end: span 4;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid var(--seat-frame-color);
+}
+
+/* 경영지원팀 4row */
+.frame__item:nth-child(13) {
+  grid-row-start: 5;
+  grid-column-start: 2;
+  grid-column-end: span 4;
+  border-top: 1px solid var(--seat-frame-color);
+  border-bottom: 1px solid #fff;
+}
+
+/* 경영지원팀 복도*/
+.frame__item:nth-child(14) {
+  grid-row-start: 2;
+  grid-row-end: span 4;
+  grid-column-start: 5;
+  grid-column-end: span 2;
+  background-color: #fff;
+}
+
+/* 좌석 1구역 박스 */
+.frame__item:nth-child(15) {
+  grid-row-start: 2;
+  grid-row-end: span 4;
+  grid-column-start: 7;
+  grid-column-end: span 32;
+  border: 1px solid var(--seat-frame-color);
+}
+
+/* 좌석 2구역 박스 */
+.frame__item:nth-child(16) {
+  grid-row-start: 7;
+  grid-row-end: span 3;
+  grid-column-start: 7;
+  grid-column-end: span 38;
+  border: 1px solid var(--seat-frame-color);
+}
+
+/* 좌석 1구역 1row */
+.frame__item:nth-child(17) {
+  grid-row-start: 2;
+  grid-column-start: 7;
+  grid-column-end: span 32;
+  border-bottom: 1px dashed var(--seat-frame-color);
+}
+/* 좌석 1구역 2row */
+.frame__item:nth-child(18) {
+  grid-row-start: 2;
+  grid-column-start: 7;
+  grid-column-end: span 32;
+  border-bottom: 1px dashed var(--seat-frame-color);
+}
