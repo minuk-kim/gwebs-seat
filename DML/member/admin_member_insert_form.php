@@ -83,7 +83,7 @@
       <div class="nav__navbar">
         <div class="navbar__item navbar__first">
           <span class="material-icons">event_seat</span>
-          <a class="link" href="../../index2.php">좌석 배정</a>
+          <a class="link" href="../../index.php">좌석 배정</a>
         </div>
         <div class="navbar__item">
         <span class="material-icons">computer</span>

@@ -100,54 +100,438 @@
       </section>
       <hr>
       <article class="main__content">
+
+        <div class="content__header-Container">
+          <div class="date-control" id="dateControl">
+            <button id="btnDatePrev" class="border-btn btn__date-style"><span class="material-icons">keyboard_arrow_left</span></button>
+            <input type="text" id="btnCalendar" class="border-btn btn__date-style" readonly="readonly" name="dateBox" />
+            <button id="btnDateNext" class="border-btn btn__date-style"><span class="material-icons">keyboard_arrow_right</span></button>
+            <button id="btnTodaySelect" class="border-btn btn__date-style">오늘</button>
+          </div>
+          <ul class="legend-list">
+            <li class="legend__blank"><span class="material-icons">square</span>공석</li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="legend__allocation"><span class="material-icons">square</span>배정가능</li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="legend__popular"><span class="material-icons">square</span>대중문화운영팀</li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="legend__1team"><span class="material-icons">square</span>네이버운영지원1팀</li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="legend__2team"><span class="material-icons">square</span>네이버운영지원2팀</li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="legend__ugc"><span class="material-icons">square</span>UGC모니터링팀</li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="legend__ai"><span class="material-icons">square</span>AI학습지원센터</li>
+          </ul>
+        </div>
+      
         <div class="content__seat-Container">
           <div class="seat-frame">
-            <!-- 1~4번째 까지 회의실 및 부스 -->
-            <div class="frame__item"></div>
-            <div class="frame__item"></div>
-            <div class="frame__item"></div>
-            <div class="frame__item"></div>
-            <!-- 5번~12번 경영지원팀 -->
-            <div class="frame__item"></div>
-            <!-- 6번~9번 경영지원팀 col -->
-            <div class="frame__item"></div>
-            <div class="frame__item"></div>
-            <div class="frame__item"></div>
-            <div class="frame__item"></div>
-            <!-- 10번~13번 경영지원팀 col -->
-            <div class="frame__item"></div>
-            <div class="frame__item"></div>
-            <div class="frame__item"></div>
-            <div class="frame__item"></div>
-            <!-- 14번 경영지원팀 복도 -->
-            <div class="frame__item"></div>
-            <!-- 14번~15번 실제 좌석 구역 박스 -->
-            <div class="frame__item"></div>
-            <div class="frame__item"></div>
-
-            <div class="frame__item"></div>
-            <div class="frame__item"></div>
+            <!-- 좌석 1구역 -->
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item item__allocation"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item item__popular"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item item__1team"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item item__2team"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item item__ugc"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item item__ai"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item item__ai"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item item__ai"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <!-- 좌석 2구역 -->
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>  
+            <!-- 좌석 3구역 -->
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <!-- 좌석 4구역 -->
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__pillar"></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <!-- 좌석 5구역 -->
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__pillar"></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__pillar"></div></div>
+              <div class="frame__seat"><div class="frame__pillar"></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__pillar"></div></div>
+            </div>
+            <!-- 좌석 6구역 -->
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__pillar"></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <!-- 좌석 7구역 -->
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <!-- 좌석 8구역 -->
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat-vip"><div class="frame__item-vip"></div></div>
+              <div class="frame__seat-vip"><div class="frame__item-vip"></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat-vip"><div class="frame__item-vip"></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <div class="frame__two-cell">
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+              <div class="frame__seat"><div class="frame__item"><div class="seat__num">469</div><div class="seat__name">김민욱</div></div></div>
+            </div>
+            <!-- 백그라운드 영역 -->
+            <div class="frame__four-cell">
+              <div class="frame__support-seat"></div>
+              <div class="frame__support-seat"></div>
+              <div class="frame__support-seat"></div>
+              <div class="frame__support-seat"></div>
+            </div>
+            <div class="frame__four-cell">
+              <div class="frame__support-seat"></div>
+              <div class="frame__support-seat"></div>
+              <div class="frame__support-seat"></div>
+              <div class="frame__support-seat"></div>
+            </div>
+            <div class="frame__col-two-cell">
+              <div class="frame__support-seat"></div>
+              <div class="frame__support-seat"></div>
+            </div>
+            <div class="meeting-room__15-7">
+              <div class="meeting-room__door"></div>
+            </div>
+            <div class="meeting-room__vip">
+              <div class="meeting-room__door"></div>
+            </div>
+            <div class="meeting-room__15-6">
+              <div class="meeting-room__door"></div>
+            </div>
+            <div class="meeting-room__booth"></div>
+            <div class="frame__out-pillar"></div>
           </div>
+
+
         </div>
 
-        <div class="index-header__container-stats">
-          <div class="container-stats__box">
-            <div class="stats-cell">총좌석</div>
-            <div class="stats-cell">4</div>
-          </div>
-          <div class="container-stats__box">
-            <div class="stats-cell">잔여좌석</div>
-            <div class="stats-cell">1</div>
-          </div>
-          <div class="container-stats__box">
-            <div class="stats-cell">배정중</div>
-            <div class="stats-cell">2</div>
-          </div>
-          <div class="container-stats__box">
-            <div class="stats-cell">미사용</div>
-            <div class="stats-cell">3</div>
-          </div>
-        </div>
       </article>
     </main>
   </div>

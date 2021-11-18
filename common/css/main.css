@@ -170,3 +170,26 @@
   float: left;
   font-size: 16px;
 }
+
+/* 날짜 팀별 명각 영역 */
+.content__header-Container {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.date-control {
+  display: flex;
+}
+
+.legend-list {
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+  font-size: 13px;
+}
+
+.legend-list > li > span {
+  font-size: 16px;
+  vertical-align: bottom;
+}

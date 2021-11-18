@@ -1,170 +1,596 @@
+.content__seat-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .seat-frame {
   display: grid;
   grid-template-columns: repeat(44, 39px);
   grid-template-rows: repeat(9, 39px);
   overflow: auto;
   border: 1px solid #41b40a;
+  width: 100%;
+  justify-content: safe center;
+  padding: 35px 0;
 }
 
-/* 15-7 회의실 */
-.frame__item:nth-child(1) {
+.frame__item {
+  height: 35px;
+  width: 35px;
+  background-color: #fafafa;
+  z-index: 10;
+  margin-top: 1px;
+  margin-left: 1px;
+  font-size: 12px;
+  color: #bdbdbd;
+  text-align: center;
+}
+
+.seat__num {
+  padding-top: 3px;
+  height: 17.5px;
+}
+.seat__name {
+  padding-bottom: 3px;
+  height: 17.5px;
+}
+
+.frame__item:hover {
+  cursor: pointer;
+  border-radius: 8px;
+  transform: scale(1.5);
+  transition: all ease 0.3s;
+  border: 1px solid #bdbdbd;
+  z-index: 10;
+}
+
+.frame__pillar {
+  height: 35px;
+  width: 35px;
+  background-color: #263238;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+.frame__out-pillar {
+  height: 35px;
+  width: 35px;
+  background-color: #263238;
+  margin-top: 2px;
+  margin-left: 2px;
+  grid-row-start: 5;
+  grid-column-start: 39;
+}
+
+.frame__four-cell {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-end: span 2;
+  grid-column-end: span 2;
+}
+
+.frame__two-cell {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-end: span 2;
+}
+
+.frame__col-two-cell {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-end: span 2;
+}
+
+.meeting-room__15-7 {
   border: 1px solid var(--seat-frame-color);
   grid-row-start: 1;
   grid-row-end: span 3;
   grid-column-start: 1;
   grid-column-end: span 2;
-  background-color: #fff;
-  z-index: 5;
 }
-/* VIP 회의실 */
-.frame__item:nth-child(2) {
+
+.meeting-room__15-7 .meeting-room__door {
+  float: right;
+  margin-top: 4px;
+  margin-right: -1px;
+}
+
+.meeting-room__vip .meeting-room__door,
+.meeting-room__15-6 .meeting-room__door {
+  float: right;
+  margin-top: -1px;
+  margin-right: 4px;
+}
+
+.meeting-room__door {
   border: 1px solid var(--seat-frame-color);
-  border-right: 1px solid var(--seat-frame-color);
+  width: 28px;
+  height: 28px;
+  border-radius: 0 0 0 28px;
+}
+
+.meeting-room__vip {
+  border: 1px solid var(--seat-frame-color);
   grid-row-start: 7;
   grid-row-end: span 3;
   grid-column-start: 1;
   grid-column-end: span 3;
-  z-index: 5;
 }
-/* 15-6 회의실 */
-.frame__item:nth-child(3) {
+
+.meeting-room__15-6 {
   border: 1px solid var(--seat-frame-color);
-  border-left: 1px solid var(--seat-frame-color);
   grid-row-start: 7;
   grid-row-end: span 3;
   grid-column-start: 4;
   grid-column-end: span 2;
-  z-index: 5;
 }
 
-/* AI 부스 */
-.frame__item:nth-child(4) {
+.meeting-room__booth {
   border: 1px solid var(--seat-frame-color);
   grid-row-start: 4;
   grid-row-end: span 2;
   grid-column-start: 41;
   grid-column-end: span 4;
-  z-index: 5;
 }
 
-/* 경영지원팀 프레임 */
-.frame__item:nth-child(5) {
-  border: 1px solid var(--seat-frame-color);
+/* 좌석 1구역*/
+.frame__four-cell:nth-child(1) {
   grid-row-start: 2;
-  grid-row-end: span 4;
-  grid-column-start: 2;
-  grid-column-end: span 3;
+  grid-column-start: 7;
+}
+.frame__four-cell:nth-child(2) {
+  grid-row-start: 2;
+  grid-column-start: 9;
+}
+.frame__four-cell:nth-child(3) {
+  grid-row-start: 2;
+  grid-column-start: 11;
+}
+.frame__four-cell:nth-child(4) {
+  grid-row-start: 2;
+  grid-column-start: 13;
 }
 
-/* 경영지원팀 1col */
-.frame__item:nth-child(6) {
+/* 좌석 2구역*/
+.frame__four-cell:nth-child(5) {
   grid-row-start: 2;
-  grid-row-end: span 4;
-  grid-column-start: 2;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  border-right: 1px solid var(--seat-frame-color);
+  grid-column-start: 16;
+}
+.frame__four-cell:nth-child(6) {
+  grid-row-start: 2;
+  grid-column-start: 18;
+}
+.frame__four-cell:nth-child(7) {
+  grid-row-start: 2;
+  grid-column-start: 20;
+}
+.frame__four-cell:nth-child(8) {
+  grid-row-start: 2;
+  grid-column-start: 22;
+}
+.frame__four-cell:nth-child(9) {
+  grid-row-start: 2;
+  grid-column-start: 24;
+}
+.frame__four-cell:nth-child(10) {
+  grid-row-start: 2;
+  grid-column-start: 26;
+}
+.frame__four-cell:nth-child(11) {
+  grid-row-start: 2;
+  grid-column-start: 28;
 }
 
-/* 경영지원팀 2col */
-.frame__item:nth-child(7) {
+/* 좌석 3구역*/
+.frame__four-cell:nth-child(12) {
   grid-row-start: 2;
-  grid-row-end: span 4;
+  grid-column-start: 31;
+}
+.frame__four-cell:nth-child(13) {
+  grid-row-start: 2;
+  grid-column-start: 33;
+}
+.frame__four-cell:nth-child(14) {
+  grid-row-start: 2;
+  grid-column-start: 35;
+}
+.frame__four-cell:nth-child(15) {
+  grid-row-start: 2;
+  grid-column-start: 37;
+}
+
+/* 좌석 4구역*/
+.frame__four-cell:nth-child(16) {
+  grid-row-start: 4;
+  grid-column-start: 7;
+}
+.frame__four-cell:nth-child(17) {
+  grid-row-start: 4;
+  grid-column-start: 9;
+}
+.frame__four-cell:nth-child(18) {
+  grid-row-start: 4;
+  grid-column-start: 11;
+}
+.frame__four-cell:nth-child(19) {
+  grid-row-start: 4;
+  grid-column-start: 13;
+}
+
+/* 좌석 5구역*/
+.frame__four-cell:nth-child(20) {
+  grid-row-start: 4;
+  grid-column-start: 16;
+}
+.frame__four-cell:nth-child(21) {
+  grid-row-start: 4;
+  grid-column-start: 18;
+}
+.frame__four-cell:nth-child(22) {
+  grid-row-start: 4;
+  grid-column-start: 20;
+}
+.frame__four-cell:nth-child(23) {
+  grid-row-start: 4;
+  grid-column-start: 22;
+}
+.frame__four-cell:nth-child(24) {
+  grid-row-start: 4;
+  grid-column-start: 24;
+}
+.frame__four-cell:nth-child(25) {
+  grid-row-start: 4;
+  grid-column-start: 26;
+}
+.frame__four-cell:nth-child(26) {
+  grid-row-start: 4;
+  grid-column-start: 28;
+}
+
+/* 좌석 6구역*/
+.frame__four-cell:nth-child(27) {
+  grid-row-start: 4;
+  grid-column-start: 31;
+}
+.frame__four-cell:nth-child(28) {
+  grid-row-start: 4;
+  grid-column-start: 33;
+}
+.frame__four-cell:nth-child(29) {
+  grid-row-start: 4;
+  grid-column-start: 35;
+}
+.frame__four-cell:nth-child(30) {
+  grid-row-start: 4;
+  grid-column-start: 37;
+}
+
+/* 좌석 7구역*/
+.frame__four-cell:nth-child(31) {
+  grid-row-start: 7;
+  grid-column-start: 7;
+}
+.frame__four-cell:nth-child(32) {
+  grid-row-start: 7;
+  grid-column-start: 9;
+}
+.frame__four-cell:nth-child(33) {
+  grid-row-start: 7;
+  grid-column-start: 11;
+}
+.frame__four-cell:nth-child(34) {
+  grid-row-start: 7;
+  grid-column-start: 13;
+}
+.frame__four-cell:nth-child(35) {
+  grid-row-start: 7;
+  grid-column-start: 15;
+}
+.frame__four-cell:nth-child(36) {
+  grid-row-start: 7;
+  grid-column-start: 17;
+}
+.frame__four-cell:nth-child(37) {
+  grid-row-start: 7;
+  grid-column-start: 19;
+}
+.frame__four-cell:nth-child(38) {
+  grid-row-start: 7;
+  grid-column-start: 21;
+}
+.frame__four-cell:nth-child(39) {
+  grid-row-start: 7;
+  grid-column-start: 23;
+}
+.frame__four-cell:nth-child(40) {
+  grid-row-start: 7;
+  grid-column-start: 25;
+}
+.frame__four-cell:nth-child(41) {
+  grid-row-start: 7;
+  grid-column-start: 27;
+}
+.frame__four-cell:nth-child(42) {
+  grid-row-start: 7;
+  grid-column-start: 29;
+}
+.frame__four-cell:nth-child(43) {
+  grid-row-start: 7;
+  grid-column-start: 31;
+}
+.frame__four-cell:nth-child(44) {
+  grid-row-start: 7;
+  grid-column-start: 33;
+}
+.frame__four-cell:nth-child(45) {
+  grid-row-start: 7;
+  grid-column-start: 35;
+}
+.frame__four-cell:nth-child(46) {
+  grid-row-start: 7;
+  grid-column-start: 37;
+}
+.frame__four-cell:nth-child(47) {
+  grid-row-start: 7;
+  grid-column-start: 39;
+}
+.frame__four-cell:nth-child(48) {
+  grid-row-start: 7;
+  grid-column-start: 41;
+}
+.frame__four-cell:nth-child(49) {
+  grid-row-start: 7;
+  grid-column-start: 43;
+}
+
+/* 좌석 8구역*/
+.frame__two-cell:nth-child(50) {
+  grid-row-start: 9;
+  grid-column-start: 7;
+}
+.frame__two-cell:nth-child(51) {
+  grid-row-start: 9;
+  grid-column-start: 9;
+}
+.frame__two-cell:nth-child(52) {
+  grid-row-start: 9;
+  grid-column-start: 11;
+}
+.frame__two-cell:nth-child(53) {
+  grid-row-start: 9;
+  grid-column-start: 13;
+}
+.frame__two-cell:nth-child(54) {
+  grid-row-start: 9;
+  grid-column-start: 15;
+}
+.frame__two-cell:nth-child(55) {
+  grid-row-start: 9;
+  grid-column-start: 17;
+}
+.frame__two-cell:nth-child(56) {
+  grid-row-start: 9;
+  grid-column-start: 19;
+}
+.frame__two-cell:nth-child(57) {
+  grid-row-start: 9;
+  grid-column-start: 21;
+}
+.frame__two-cell:nth-child(58) {
+  grid-row-start: 9;
+  grid-column-start: 23;
+}
+.frame__two-cell:nth-child(59) {
+  grid-row-start: 9;
+  grid-column-start: 25;
+}
+.frame__two-cell:nth-child(60) {
+  grid-row-start: 9;
+  grid-column-start: 27;
+}
+.frame__two-cell:nth-child(61) {
+  grid-row-start: 9;
+  grid-column-start: 29;
+}
+.frame__two-cell:nth-child(62) {
+  grid-row-start: 9;
+  grid-column-start: 31;
+}
+.frame__two-cell:nth-child(63) {
+  grid-row-start: 9;
+  grid-column-start: 33;
+}
+.frame__two-cell:nth-child(64) {
+  grid-row-start: 9;
+  grid-column-start: 35;
+}
+.frame__two-cell:nth-child(65) {
+  grid-row-start: 9;
+  grid-column-start: 37;
+}
+.frame__two-cell:nth-child(66) {
+  grid-row-start: 9;
+  grid-column-start: 39;
+}
+.frame__two-cell:nth-child(67) {
+  grid-row-start: 9;
+  grid-column-start: 41;
+}
+.frame__two-cell:nth-child(68) {
+  grid-row-start: 9;
+  grid-column-start: 43;
+}
+
+/* 좌석 지원팀 1구역*/
+.frame__four-cell:nth-child(69) {
+  grid-row-start: 2;
   grid-column-start: 3;
-  border-left: 1px solid var(--seat-frame-color);
-  border-right: 1px dashed var(--seat-frame-color);
 }
-
-/* 경영지원팀 3col */
-.frame__item:nth-child(8) {
-  grid-row-start: 2;
-  grid-row-end: span 4;
-  grid-column-start: 4;
-  border-left: 1px dashed var(--seat-frame-color);
+.frame__four-cell:nth-child(70) {
+  grid-row-start: 4;
+  grid-column-start: 3;
 }
-
-/* 경영지원팀 4col */
-.frame__item:nth-child(9) {
-  grid-row-start: 2;
-  grid-row-end: span 4;
-  grid-column-start: 5;
-  border-left: 1px solid var(--seat-frame-color);
-}
-
-/* 경영지원팀 1row */
-.frame__item:nth-child(10) {
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-column-end: span 4;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid var(--seat-frame-color);
-}
-
-/* 경영지원팀 2row */
-.frame__item:nth-child(11) {
-  grid-row-start: 3;
-  grid-column-start: 2;
-  grid-column-end: span 4;
-  border-top: 1px solid var(--seat-frame-color);
-  border-bottom: 1px solid #fff;
-}
-
-/* 경영지원팀 3row */
-.frame__item:nth-child(12) {
+.frame__col-two-cell:nth-child(71) {
   grid-row-start: 4;
   grid-column-start: 2;
-  grid-column-end: span 4;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid var(--seat-frame-color);
 }
 
-/* 경영지원팀 4row */
-.frame__item:nth-child(13) {
-  grid-row-start: 5;
-  grid-column-start: 2;
-  grid-column-end: span 4;
+.frame__four-cell .frame__seat:nth-child(1) {
   border-top: 1px solid var(--seat-frame-color);
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #f5f5f5;
+  border-left: 1px solid var(--seat-frame-color);
+}
+.frame__four-cell .frame__seat:nth-child(2) {
+  border-top: 1px solid var(--seat-frame-color);
+  border-right: 1px solid var(--seat-frame-color);
+  border-bottom: 1px solid #f5f5f5;
+  border-left: 1px solid #fff;
+}
+.frame__four-cell .frame__seat:nth-child(3) {
+  border-top: 1px solid #f5f5f5;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid var(--seat-frame-color);
+  border-left: 1px solid var(--seat-frame-color);
+}
+.frame__four-cell .frame__seat:nth-child(4) {
+  border-top: 1px solid #f5f5f5;
+  border-right: 1px solid var(--seat-frame-color);
+  border-bottom: 1px solid var(--seat-frame-color);
+  border-left: 1px solid #fff;
+}
+
+.frame__four-cell .frame__support-seat:nth-child(1) {
+  border-top: 1px solid #fff;
+  border-right: 1px solid #f5f5f5;
+  border-bottom: 1px solid var(--seat-frame-color);
+  border-left: 1px solid var(--seat-frame-color);
+}
+.frame__four-cell .frame__support-seat:nth-child(2) {
+  border-top: 1px solid #fff;
+  border-right: 1px solid var(--seat-frame-color);
+  border-bottom: 1px solid var(--seat-frame-color);
+  border-left: 1px solid #f5f5f5;
+}
+.frame__four-cell .frame__support-seat:nth-child(3) {
+  border-top: 1px solid var(--seat-frame-color);
+  border-right: 1px solid #f5f5f5;
   border-bottom: 1px solid #fff;
+  border-left: 1px solid var(--seat-frame-color);
+}
+.frame__four-cell .frame__support-seat:nth-child(4) {
+  border-top: 1px solid var(--seat-frame-color);
+  border-right: 1px solid var(--seat-frame-color);
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #f5f5f5;
 }
 
-/* 경영지원팀 복도*/
-.frame__item:nth-child(14) {
-  grid-row-start: 2;
-  grid-row-end: span 4;
-  grid-column-start: 5;
-  grid-column-end: span 2;
-  background-color: #fff;
+.frame__two-cell .frame__seat:nth-child(1) {
+  border-top: 1px solid var(--seat-frame-color);
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid var(--seat-frame-color);
+  border-left: 1px solid var(--seat-frame-color);
+}
+.frame__two-cell .frame__seat:nth-child(2) {
+  border-top: 1px solid var(--seat-frame-color);
+  border-right: 1px solid var(--seat-frame-color);
+  border-bottom: 1px solid var(--seat-frame-color);
+  border-left: 1px solid #fff;
 }
 
-/* 좌석 1구역 박스 */
-.frame__item:nth-child(15) {
-  grid-row-start: 2;
-  grid-row-end: span 4;
-  grid-column-start: 7;
-  grid-column-end: span 32;
-  border: 1px solid var(--seat-frame-color);
+.frame__two-cell .frame__seat-vip:nth-child(1) {
+  border-top: 1px solid var(--seat-frame-color);
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid var(--seat-frame-color);
+  border-left: 1px solid #fff;
+}
+.frame__two-cell .frame__seat-vip:nth-child(2) {
+  border-top: 1px solid var(--seat-frame-color);
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid var(--seat-frame-color);
+  border-left: 1px solid #fff;
 }
 
-/* 좌석 2구역 박스 */
-.frame__item:nth-child(16) {
-  grid-row-start: 7;
-  grid-row-end: span 3;
-  grid-column-start: 7;
-  grid-column-end: span 38;
-  border: 1px solid var(--seat-frame-color);
+.frame__col-two-cell .frame__support-seat:nth-child(1) {
+  border-top: 1px solid #fff;
+  border-right: 1px solid var(--seat-frame-color);
+  border-bottom: 1px solid var(--seat-frame-color);
+  border-left: 1px solid #fff;
+}
+.frame__col-two-cell .frame__support-seat:nth-child(2) {
+  border-top: 1px solid var(--seat-frame-color);
+  border-right: 1px solid var(--seat-frame-color);
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
 }
 
-/* 좌석 1구역 1row */
-.frame__item:nth-child(17) {
-  grid-row-start: 2;
-  grid-column-start: 7;
-  grid-column-end: span 32;
-  border-bottom: 1px dashed var(--seat-frame-color);
+.legend__blank > span {
+  color: #fafafa;
 }
-/* 좌석 1구역 2row */
-.frame__item:nth-child(18) {
-  grid-row-start: 2;
-  grid-column-start: 7;
-  grid-column-end: span 32;
-  border-bottom: 1px dashed var(--seat-frame-color);
+
+.item__allocation {
+  background-color: #b0bec5;
+  color: #546e7a;
+}
+.item__allocation:hover {
+  border: 1px solid #546e7a;
+}
+.legend__allocation > span {
+  color: #b0bec5;
+}
+
+.item__popular {
+  background-color: #ce93d8;
+  color: #8e24aa;
+}
+.item__popular:hover {
+  border: 1px solid #8e24aa;
+}
+.legend__popular > span {
+  color: #ce93d8;
+}
+.item__1team {
+  background-color: #ffcc80;
+  color: #fb8c00;
+}
+.item__1team:hover {
+  border: 1px solid #fb8c00;
+}
+.legend__1team > span {
+  color: #ffcc80;
+}
+.item__2team {
+  background-color: #90caf9;
+  color: #1e88e5;
+}
+.item__2team:hover {
+  border: 1px solid #1e88e5;
+}
+.legend__2team > span {
+  color: #90caf9;
+}
+.item__ugc {
+  background-color: #a5d6a7;
+  color: #43a047;
+}
+.item__ugc:hover {
+  border: 1px solid #43a047;
+}
+.legend__ugc > span {
+  color: #a5d6a7;
+}
+.item__ai {
+  background-color: #f48fb1;
+  color: #d81b60;
+}
+.item__ai:hover {
+  border: 1px solid #d81b60;
+}
+.legend__ai > span {
+  color: #f48fb1;
 }

@@ -128,6 +128,43 @@ select:disabled {
   margin: 0 3px;
 }
 
+/* 달력 아이콘 */
+.ui-datepicker-trigger span {
+  font-size: 15px;
+}
+
+.ui-datepicker-trigger {
+  cursor: pointer;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  color: var(--grey-font-color);
+  border-radius: 0px;
+  padding: 3px 8px;
+  margin-right: 8px;
+}
+.ui-datepicker-trigger:hover {
+  background-color: #e6e6e6;
+}
+
+.border-btn > .material-icons {
+  font-size: 15px;
+  padding: 3px;
+}
+
+.btn__date-style {
+  text-align: center;
+}
+
+.btn__date-calendar {
+  border: 1px solid #e5e5e5;
+  margin-left: 8px;
+}
+
+.btn__date-style > span {
+  font-size: 15px;
+  padding: 3px;
+}
+
 /* 로딩 화면 만들기 */
 #lodingWrap {
   display: none;
